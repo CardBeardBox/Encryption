@@ -1,5 +1,5 @@
 # Encryption
-# A simple data string encryption program
+A simple data string encryption program
 
 # 1. Takes user input of a data string to encrypt
 # 2. Runs through a for loop to detect each character type
