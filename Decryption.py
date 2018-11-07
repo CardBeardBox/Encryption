@@ -65,7 +65,7 @@ while len(data) < 6:
     print('Please enter the data string you would like to be decrypted\n')
     data = input()
 
-# Loop takes each character through the encrypt functions
+# Loop takes each character through the decrypt functions
 for character in data:
     decKey = len(data) - 5
     
