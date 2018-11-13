@@ -1,3 +1,5 @@
+#! python3
+
 import random
 
 # Definitions for usable characters and their numeric values, used as references by encryption function
@@ -70,7 +72,7 @@ for character in data:
     encKey = len(data) - 5
     encFunc = random.randint(1, 4)
     
-    if character == ' ':
+    if character.isspace():
         encryptedString.append(' ')
         
     elif encFunc < 4:
@@ -83,5 +85,4 @@ for character in data:
 
 # Displays result after converting to a single string for ease of reading      
 print('Your original input of ' + data + ' was encrypted to:', end = ' ')
-for i in range(len(encryptedString)):
-    print(encryptedString[i], end = '')
+print(''.join(encryptedString))
